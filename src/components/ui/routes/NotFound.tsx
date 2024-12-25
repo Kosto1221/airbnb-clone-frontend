@@ -7,7 +7,7 @@ export default function NotFound() {
       <Heading>Page not found.</Heading>
       <Text>It seems that you're lost.</Text>
       <Link to="/">
-        <Button colorScheme={"red"} variant={"outline"}>
+        <Button colorPalette={"red"} variant={"outline"}>
           Go home &rarr;
         </Button>
       </Link>
