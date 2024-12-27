@@ -28,3 +28,6 @@ export const getRooms = () =>
 //   const response = await axiosInstance.get("room/");
 //   return response.data;
 // }
+
+export const getRoom = () =>
+  instance.get(`rooms/1`).then((response) => response.data);
