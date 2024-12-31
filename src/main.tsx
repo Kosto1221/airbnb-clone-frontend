@@ -9,12 +9,10 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const client = new QueryClient();
 
 createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <QueryClientProvider client={client}>
-      <ChakraProvider theme={theme}>
-        <ColorModeScript initialColorMode={theme.config.initialColorMode} />
-        <RouterProvider router={router} />
-      </ChakraProvider>
-    </QueryClientProvider>
-  </StrictMode>
+  <QueryClientProvider client={client}>
+    <ChakraProvider theme={theme}>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+      <RouterProvider router={router} />
+    </ChakraProvider>
+  </QueryClientProvider>
 );
