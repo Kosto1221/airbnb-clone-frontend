@@ -7,6 +7,7 @@ export default function useUser() {
     queryKey: ["me"],
     queryFn: getMe,
     retry: false,
+    refetchOnWindowFocus: false,
   });
   console.log(isError);
   return {
